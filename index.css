@@ -119,7 +119,8 @@
 	padding-top: 6.25rem;
 	padding-bottom: 3rem;
 	text-align: center;
-	min-height: 80vh;
+	width: fit-content;
+	height: fit-content;
 }
 .about .h2-heading {
 	margin-bottom: 1.2rem;
@@ -135,6 +136,7 @@
 }
 .about .about-card {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	margin-left: 100px;
@@ -175,7 +177,7 @@
 }
 .services .inner-container{
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 }
 .services .services-card {
 	max-width: 21rem;
@@ -201,17 +203,20 @@
 
 /*--------------------------------------------------------------
 # Portfolio
---------------------------------------------------------------*/
-.single-awesome-project {
-	overflow: hidden;
-	margin-bottom: 30px;
-}  
+--------------------------------------------------------------*/ 
 #portfolio{
 	padding-top: 5.25rem;
+}
+#portfolio .row{
+	margin-left: 0;
 }
 #portfolio h2{
 	color: #1dc8cd;
 	margin-bottom: 20px;
+}
+.single-awesome-project {
+	overflow: hidden;
+	margin-bottom: 30px;
 }
 .awesome-img {
 	display: block;
